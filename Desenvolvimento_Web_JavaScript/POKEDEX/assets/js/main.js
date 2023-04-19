@@ -12,15 +12,17 @@ function loadPokemonItens(offset, limit) {
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
             <div class="detail">
-                <ol class="types">
-                ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+            <ol class="types">
+            ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+            <span class="type" id="abilities${pokemon.type}">${pokemon.type}</span>
                 </ol>
                 <img src="${pokemon.photo}" alt="${pokemon.name}">
             </div>
         </li>
-    `).join('')
-        pokemonList.innerHTML += newHtml
-    })
+    `
+    ).join('')
+    pokemonList.innerHTML += newHtml
+})
 }
 
 loadPokemonItens(offset, limit)
@@ -41,3 +43,26 @@ loadMoreButton.addEventListener('click', () => {
 })
 
 
+// 		
+// 		`
+//         <li class="pokemon ${pokemon.type}">
+//             <span class="number">#${pokemon.number}</span>
+//             <span class="name">${pokemon.name}</span>
+//             <div class="detail">
+//             <ol class="types">
+//             ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+//             <span class="type" id="abilities${pokemon.type}">${pokemon.type}</span>
+//                 </ol>
+//                 <img src="${pokemon.photo}" alt="${pokemon.name}">
+//             </div>
+//         </li>
+//     `
+// 		eval("abilities" + ${pokemon.type}).addEventListener('click', () => {
+// 			alert("EPA!" + pokemon.type)
+// 		})
+	
+// 	}
+// 	).join('')
+//         pokemonList.innerHTML += newHtml
+//     })
+// }
