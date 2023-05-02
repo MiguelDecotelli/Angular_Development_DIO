@@ -15,14 +15,6 @@ body {
 
 }
 
-.detail_content {
-    height: 100vh;
-    width: 100vw;
-    padding: 1rem;
-    /* background-color: #FFF; */
-
-}
-
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;

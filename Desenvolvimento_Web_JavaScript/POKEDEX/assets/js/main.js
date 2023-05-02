@@ -14,16 +14,35 @@ function loadPokemonItens(offset, limit) {
             <div class="detail">
             <ol class="types">
             ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-            <span class="type" id="abilities${pokemon.type}">${pokemon.type}</span>
-                </ol>
+            <a href="#" class="more-info type" id="abilities" data-number="${pokemon.number}">abilities</a>
+            </ol>
                 <img src="${pokemon.photo}" alt="${pokemon.name}">
             </div>
         </li>
     `
     ).join('')
     pokemonList.innerHTML += newHtml
-})
+
+      // Adição de um 'event listener' para o link criado (more-info) dentro da função acima
+      const moreInfoLinks = document.querySelectorAll('.more-info');
+      moreInfoLinks.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const number = link.dataset.number;
+          openNewPageWithInfo(number);
+        });
+      });  
+    });
 }
+
+// Função responsável por carregar uma nova página referente ao pokemon (número) selecionado.
+function openNewPageWithInfo(number) {
+    const searchParams = new URLSearchParams();
+    searchParams.set('number', number);
+  
+    const newUrl = 'http://127.0.0.1:5501/pokemon_abilities.html?' + searchParams.toString();
+    window.location.href= newUrl;
+  }
 
 loadPokemonItens(offset, limit)
 
@@ -41,28 +60,3 @@ loadMoreButton.addEventListener('click', () => {
     }
 
 })
-
-
-// 		
-// 		`
-//         <li class="pokemon ${pokemon.type}">
-//             <span class="number">#${pokemon.number}</span>
-//             <span class="name">${pokemon.name}</span>
-//             <div class="detail">
-//             <ol class="types">
-//             ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-//             <span class="type" id="abilities${pokemon.type}">${pokemon.type}</span>
-//                 </ol>
-//                 <img src="${pokemon.photo}" alt="${pokemon.name}">
-//             </div>
-//         </li>
-//     `
-// 		eval("abilities" + ${pokemon.type}).addEventListener('click', () => {
-// 			alert("EPA!" + pokemon.type)
-// 		})
-	
-// 	}
-// 	).join('')
-//         pokemonList.innerHTML += newHtml
-//     })
-// }
