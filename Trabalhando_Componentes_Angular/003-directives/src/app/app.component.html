@@ -1,0 +1,21 @@
+<app-attributes>
+    <h3>Hellooooooo</h3>
+    <p>Came from outside</p>
+</app-attributes>
+
+<app-card *ngIf="cardIsAlive; else anotherBlock"></app-card>
+
+<ng-template #anotherBlock>
+    <p>Hello I'm a secret block</p>
+</ng-template>
+
+
+<app-list-view>
+
+</app-list-view>
+
+<app-input>
+    
+</app-input>
+
+<router-outlet></router-outlet>

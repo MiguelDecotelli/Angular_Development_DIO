@@ -1,0 +1,27 @@
+<p [ngClass]="my_style">attributes works!</p>
+<button (click)="switch_colors()">switch</button>
+<h1 [ngStyle]="{'background':back_color, 'color':font_color}">Angular Development</h1>
+
+<ng-content select="h3">
+
+</ng-content>
+
+<h2>Shooping Cart</h2>
+<input type="text" [(ngModel)]="item">
+<button (click)="addToList()">ADD</button>
+<p>{{item}}</p>
+
+<ul>
+    <li *ngFor=" let element of list">{{element}}</li>
+</ul>
+
+<hr>
+
+<ng-template [ngIf]="isEnableBlock">
+    <a href="#">Finalize</a>
+</ng-template>
+<br>
+<ng-template [ngIf]="true">
+    <a href="#">Add to cart</a>
+</ng-template>
+

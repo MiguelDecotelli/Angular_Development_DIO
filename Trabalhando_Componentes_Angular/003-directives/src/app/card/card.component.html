@@ -1,0 +1,37 @@
+<h1>My Card</h1>
+
+<p>card works!</p>
+
+<button>Hello World</button>
+
+<ul>
+    <li *ngFor="let p of products; let i = index" (click)="remove(i)">
+        {{ i }} - {{ p }}</li>
+    <button (click)=" add()">Add</button>
+</ul>
+
+<div [ngSwitch]="menuType">
+
+    <div *ngSwitchDefault="">
+        <ul>
+            <li>Edit profile</li>
+            <li>Add Card</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'admin'">
+        <ul>
+            <li>Edit profile</li>
+            <li>Add Card</li>
+            <li>Manage users</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'superuser'">
+        <ul>
+            <li>Edit profile</li>
+            <li>Add Card</li>
+            <li>Manage users</li>
+            <li>Manage admins</li>
+        </ul>
+    </div>
+
+</div>
