@@ -1,0 +1,32 @@
+@media screen and (min-width: 750px) {
+    .secondary-title h4 {
+        align-self: flex-start;
+        font-weight: 900;
+        margin-bottom: 3.125rem;
+    }
+
+    .secondary-title hr {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        opacity: 1;
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 749px) {
+    .secondary-title h4 {
+        margin-top: 1.345rem;
+        align-self: flex-start;
+        font-weight: 900;
+        margin-bottom: 1.125rem;
+    }
+
+    .secondary-title hr {
+        margin-top: 1.345rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        opacity: 1;
+    }
+}

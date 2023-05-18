@@ -1,14 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Ubuntu&display=swap');
+@media screen and (min-width: 375px) and (max-width: 699px) {
+    .primary-title {
+        width: 100%;
+    }
+    .primary-title h3 {
+        align-self: flex-start;
+        font-weight: 900;
+        margin-bottom: 3.125rem;
+    }
 
-.primary-title h3{
-    align-self: flex-start;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
+    .primary-title hr {
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        opacity: 1;
+    }
 }
 
-.primary-title hr{
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    opacity: 1;
+@media screen and (min-width: 700px) {
+    .primary-title h3 {
+        align-self: flex-start;
+        font-weight: 800;
+        margin-bottom: 3.125rem;
+    }
+
+    .primary-title hr {
+        max-width: 72vw;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        opacity: 1;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .primary-title h3 {
+        align-self: flex-start;
+        font-weight: 900;
+        margin-bottom: 3.125rem;
+    }
+
+    .primary-title hr {
+        max-width: 73vw;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        opacity: 1;
+    }
 }

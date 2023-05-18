@@ -1,1 +1,15 @@
-<p>tertiary-card works!</p>
+<div class="container">
+    <div class="tertiary-card">
+        <div class="image-container">
+            <img [src]="myImage"class="expandable-image">
+        </div>
+        <div>
+            <h6><a [routerLink]="['content', id]">{{myTitle}}</a></h6>
+        </div>
+        <p id="date">{{myDate}}</p>
+        <div>
+            <p>{{myText}}</p>
+        </div>
+        <hr>
+    </div>
+</div>

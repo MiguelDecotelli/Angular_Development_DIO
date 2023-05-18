@@ -1,15 +1,15 @@
-<div class="primary-card">
-    <div>
-        <img src="" alt="">
-    </div>
-    <div>
-        <title>
-            Title
-        </title>
-    </div>
-    <div>
-        <p>
-            text
-        </p>
+<div class="container">
+    <div class=" primary-card">
+        <div class="image-container">
+            <img [src]="myImage" class="expandable-image">
+        </div>
+        <div>
+            <h6><a [routerLink]="['content', id]">{{myTitle}}</a></h6>
+        </div>
+        <p id="date">{{myDate}}</p>
+        <div>
+            <p>{{myText}}</p>
+        </div>
+        <hr>
     </div>
 </div>

@@ -44,3 +44,8 @@ tsconfig.app.json
 tsconfig.spec.json
 
 .editorconfig
+
+# images
+src/assets/hulk2.png
+src/assets/Iron_man.png
+

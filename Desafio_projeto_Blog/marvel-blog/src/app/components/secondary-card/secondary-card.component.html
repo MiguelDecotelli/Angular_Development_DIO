@@ -1,1 +1,16 @@
-<p>secondary-card works!</p>
+<div class="container">
+    <div class="secondary-card">
+        <div class="image-container">
+            <img [src]="myImage" class="expandable-image">
+        </div>
+        <div>
+            <div class="secondary-card-date">
+                <p id="date">{{myDate}}</p>
+            </div>
+            <h6>
+                <a [routerLink]="['content', id]">{{myText}}
+                </a>
+            </h6>
+        </div>
+    </div>
+</div>

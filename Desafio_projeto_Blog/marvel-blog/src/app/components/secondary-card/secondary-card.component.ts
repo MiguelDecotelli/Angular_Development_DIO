@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-secondary-card',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./secondary-card.component.css']
 })
 export class SecondaryCardComponent {
-
+  @Input() id: string = "";
+  @Input() myImage: string = "";
+  @Input() myText: string = "";
+  @Input() myDate: string = "";
+  @Input() myDescription: string = "";
 }

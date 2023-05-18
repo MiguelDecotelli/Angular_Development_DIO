@@ -1,0 +1,81 @@
+@media screen and (min-width: 1200px) {
+    .secondary-card {
+        display: flex;
+        align-items: center;
+    }
+
+    .secondary-card img {
+        max-width: 9rem;
+        height: auto;
+        margin-right: .825rem;
+        margin-bottom: 2.125rem;
+    }
+
+    .secondary-card-date{
+        margin-top: .125rem;
+        margin-bottom: .725rem;
+        font-size: .625rem;
+    }
+
+    .secondary-card h6 {
+        max-width: 19.5rem;
+        margin-bottom: 2.625rem;
+        font-weight: 700;
+        font-size: small;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .secondary-card a {
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 1199px) {
+    .secondary-card {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .secondary-card-date{
+        margin-bottom: .125rem;
+        font-size: .625rem;
+    }
+
+    .secondary-card h6 {
+        font-weight: 600;
+        font-size: .645rem;
+        text-align: justify;
+        width: 100%;
+        max-width: 23.5rem;
+    }
+
+    .secondary-card a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .secondary-card img {
+        margin-top: .850rem;
+        max-width: 8rem;
+        height: auto;
+        margin-left: .825rem;
+        margin-bottom: .825rem;
+    }
+    .image-container {
+        position: relative;
+      }
+      
+      .expandable-image {
+        transition: transform 0.3s ease;
+      }
+      
+      .expandable-image:hover {
+        transform: scale(1.5);
+      }
+
+}

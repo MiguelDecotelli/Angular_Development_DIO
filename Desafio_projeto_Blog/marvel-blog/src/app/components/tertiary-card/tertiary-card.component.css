@@ -1,0 +1,116 @@
+@media screen and (min-width: 375px) and (max-width: 799px) {
+    .tertiary-card img {
+        height: auto;
+        max-width: 0.5rem;
+    }
+
+    .image-container {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .expandable-image {
+        transition: transform 0.3s ease;
+        transform: scale(0);
+    }
+
+    .image-container:hover .expandable-image {
+        visibility: visible;
+        transform: scale(50);
+    }
+
+    #date {
+        font-size: .625rem;
+    }
+
+    .tertiary-card h6 {
+        font-weight: 500;
+        margin-top: 1rem;
+        text-align: justify;
+        max-width: 23.5rem;
+    }
+
+    .tertiary-card a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .tertiary-card p {
+        margin-top: .625rem;
+        text-align: justify;
+        font-size: .645rem;
+        max-width: 23.5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .tertiary-card img {
+        max-width: 17.5rem;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    #date {
+        font-size: .625rem;
+    }
+
+    .tertiary-card h6 {
+        font-weight: 900;
+        margin-top: 1rem;
+        text-align: justify;
+        max-width: 17.5rem;
+    }
+
+    .tertiary-card a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .tertiary-card p {
+        margin-top: .625rem;
+        text-align: justify;
+        font-size: small;
+        max-width: 17.5rem;
+    }
+
+    .tertiary-card hr {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tertiary-card img {
+        max-width: 17.5rem;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    #date {
+        font-size: .625rem;
+    }
+
+    .tertiary-card h6 {
+        font-weight: 900;
+        margin-top: 1rem;
+        text-align: justify;
+        max-width: 17.5rem;
+    }
+
+    .tertiary-card a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .tertiary-card p {
+        margin-top: .625rem;
+        text-align: justify;
+        font-size: small;
+        max-width: 17.5rem;
+    }
+
+    .tertiary-card hr {
+        display: none;
+    }
+}

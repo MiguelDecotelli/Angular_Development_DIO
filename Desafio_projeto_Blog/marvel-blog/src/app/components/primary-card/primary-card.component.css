@@ -1,0 +1,87 @@
+@media screen and (min-width: 1200px) {
+
+    .primary-card img {
+        max-width: 23.5rem;
+        height: auto;
+        margin-bottom: 1.2rem;
+    }
+
+    #date {
+        font-size: .625rem;
+    }
+
+    .primary-card h6 {
+        font-weight: 900;
+        margin-top: 1rem;
+        text-align: center;
+        max-width: 23.5rem;
+    }
+
+    .primary-card a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .primary-card p {
+        margin-top: 1rem;
+        text-align: justify;
+        font-size: small;
+        max-width: 23.5rem;
+    }
+
+    .primary-card hr {
+        border: none;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1199px) {
+    .primary-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primary-card img {
+        width: 100%;
+        max-width: 35rem;
+        height: auto;
+        margin-bottom: 1.2rem;
+    }
+
+    .image-container {
+        position: relative;
+    }
+
+    .expandable-image {
+        transition: transform 0.3s ease;
+    }
+
+    .expandable-image:hover {
+        transform: scale(1.2);
+    }
+
+    #date {
+        font-size: .625rem;
+    }
+
+    .primary-card h6 {
+        font-weight: 900;
+        margin-top: .625rem;
+        text-align: center;
+        width: 100%;
+        max-width: 35rem;
+    }
+
+    .primary-card a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .primary-card p {
+        text-align: justify;
+        font-size: small;
+        width: 100%;
+        max-width: 35rem;
+    }
+
+}

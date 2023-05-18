@@ -1,10 +1,75 @@
-<app-primary-title></app-primary-title>
-
-    <div class="cards">
+<div class="container content-home">
+    <div class="blog-title">
+        <app-primary-title></app-primary-title>
+    </div>
+    <div class="main-cards">
         <div class="primary-card">
-            <app-primary-card></app-primary-card>
+            <app-primary-card [id]="articlesWithId[0].id" [myImage]="articlesWithId[0].image"
+                [myTitle]="articlesWithId[0].title" [myText]="articlesWithId[0].text" [myDate]="articlesWithId[0].date"
+                [myDescription]="articlesWithId[0].description">
+            </app-primary-card>
         </div>
-        <div class="secondary-cards">
-
+        <div class="secondaries">
+            <div class="secondary-cards">
+                <app-secondary-card [id]="articlesWithId[1].id" [myImage]="articlesWithId[1].image"
+                    [myText]="articlesWithId[1].text" [myDate]="articlesWithId[1].date"
+                    [myDescription]="articlesWithId[1].description"></app-secondary-card>
+                <hr>
+            </div>
+            <div class="secondary-cards">
+                <app-secondary-card [id]="articlesWithId[2].id" [myImage]="articlesWithId[2].image"
+                    [myText]="articlesWithId[2].text" [myDate]="articlesWithId[2].date"
+                    [myDescription]="articlesWithId[2].description">
+                </app-secondary-card>
+            </div>
+            <hr>
+            <div class="secondary-cards">
+                <app-secondary-card [id]="articlesWithId[3].id" [myImage]="articlesWithId[3].image"
+                    [myText]="articlesWithId[3].text" [myDate]="articlesWithId[3].date"
+                    [myDescription]="articlesWithId[3].description">
+                </app-secondary-card>
+            </div>
         </div>
     </div>
+    <div class="blog-second-title">
+        <app-secondary-title></app-secondary-title>
+    </div>
+    <div class="support-cards">
+        <div class="tertiary-cards">
+            <app-tertiary-card [id]="articlesWithId[4].id" [myImage]="articlesWithId[4].image"
+                [myTitle]="articlesWithId[4].title" [myText]="articlesWithId[4].text" [myDate]="articlesWithId[4].date"
+                [myDescription]="articlesWithId[4].description">
+            </app-tertiary-card>
+        </div>
+        <div class="tertiary-cards">
+            <app-tertiary-card [id]="articlesWithId[5].id" [myImage]="articlesWithId[5].image"
+                [myTitle]="articlesWithId[5].title" [myText]="articlesWithId[5].text" [myDate]="articlesWithId[5].date"
+                [myDescription]="articlesWithId[5].description">
+            </app-tertiary-card>
+        </div>
+        <div class="tertiary-cards">
+            <app-tertiary-card [id]="articlesWithId[6].id" [myImage]="articlesWithId[6].image"
+                [myTitle]="articlesWithId[6].title" [myText]="articlesWithId[6].text" [myDate]="articlesWithId[6].date"
+                [myDescription]="articlesWithId[6].description">
+            </app-tertiary-card>
+        </div>
+        <div class="tertiary-cards">
+            <app-tertiary-card [id]="articlesWithId[7].id" [myImage]="articlesWithId[7].image"
+                [myTitle]="articlesWithId[7].title" [myText]="articlesWithId[7].text" [myDate]="articlesWithId[7].date"
+                [myDescription]="articlesWithId[7].description">
+            </app-tertiary-card>
+        </div>
+        <div class="tertiary-cards">
+            <app-tertiary-card [id]="articlesWithId[8].id" [myImage]="articlesWithId[8].image"
+                [myTitle]="articlesWithId[8].title" [myText]="articlesWithId[8].text" [myDate]="articlesWithId[8].date"
+                [myDescription]="articlesWithId[8].description">
+            </app-tertiary-card>
+        </div>
+        <div class="tertiary-cards">
+            <app-tertiary-card [id]="articlesWithId[9].id" [myImage]="articlesWithId[9].image"
+                [myTitle]="articlesWithId[9].title" [myText]="articlesWithId[9].text" [myDate]="articlesWithId[9].date"
+                [myDescription]="articlesWithId[9].description">
+            </app-tertiary-card>
+        </div>
+    </div>
+</div>
